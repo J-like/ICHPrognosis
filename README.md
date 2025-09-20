@@ -1,45 +1,44 @@
 ## Multi-modal Deep Learning for Predicting Functional Outcomes in ICH
 
-本项目提供了我们研究中使用的 **模型代码与权重文件**，包括：
+This repository provides the **model code and pretrained weights** used in our study, including:
 
-1. **模型代码**
-2. **在我们数据集上训练好的 nnU-Net v2 分割模型权重**  
-3. **多模态预后预测模型权重**  
+1. **Model code**  
+2. **nnU-Net v2 segmentation model weights** (trained on our dataset)  
+3. **Multi-modal prognostic prediction model weights**  
 
 ---
 
-### 🔗 权重下载
+### 🔗 Download Weights
 
-所有权重文件均托管于 Google Drive：  
+All weights are hosted on Google Drive:  
 
-👉 [点击下载模型权重](https://drive.google.com/drive/folders/1pW6QGRM6AF2CuE5ohcE-WfbhgxOBGISZ?usp=drive_link)
+👉 [Download model weights](https://drive.google.com/drive/folders/1pW6QGRM6AF2CuE5ohcE-WfbhgxOBGISZ?usp=drive_link)
 
-注意，我们代码中的BioClinicalBERT 预训练模型来自 HuggingFace：  
+Note: The BioClinicalBERT pretrained model used in our code is from HuggingFace:  
 👉 [BioClinicalBERT on HuggingFace](https://huggingface.co/emilyalsentzer/Bio_ClinicalBERT)
 
 ---
 
-### 🚀 使用方法
+### 🚀 Usage
 
-1. 将数据替换为自己的数据，并依据示例文件的目录格式进行存放。
-2. （可选）若需使用 nnU-Net v2进行3D CT 颅骨剥离，可以下载我们已经训练好的nnU-Net v2 分割模型权重，之后的操作请参考其官方文档：[nnU-Net v2 GitHub](https://github.com/MIC-DKFZ/nnUNet)。  
-3. 运行以下命令即可开始训练：  
+1. Replace the dataset with your own data, and organize it following the directory format in the example files.  
+2. *(Optional)* If you need to perform 3D CT skull stripping using nnU-Net v2, you can download our pretrained nnU-Net v2 segmentation weights. For further steps, please refer to the official documentation: [nnU-Net v2 GitHub](https://github.com/MIC-DKFZ/nnUNet).  
+3. Start training with the following command:  
     ```bash
     python train.py
     ```  
----
-
-### ⚠️ 注意事项
-
-- 由于不同中心的数据具有异质性，建议研究者利用个人的数据进行重新训练模型。
-- `.pth` 文件仅包含 **模型权重**，请确保在加载时定义与训练阶段一致的模型结构。  
-- nnU-Net v2 模型的使用需遵循官方框架的路径规范。  
-- 建议 BioClinicalBERT 从 HuggingFace 单独下载，并在运行时加载。  
 
 ---
 
-### 📖 引用
+### ⚠️ Notes
 
-如果您使用了我们的多模态模型，请引用我们的论文（待补充）。  
+- Due to the heterogeneity of data from different medical centers, we recommend retraining the model on your own dataset.  
+- `.pth` files only contain the **model weights**. Please ensure that the model definition matches the training phase when loading them.  
+- nnU-Net v2 models must follow the official framework’s path conventions.  
+- BioClinicalBERT should be downloaded separately from HuggingFace and loaded during runtime.  
 
+---
 
+### 📖 Citation
+
+If you use our multi-modal model, please cite our paper (to be added).  
