@@ -23,8 +23,7 @@
 
 1. 将数据替换为自己的数据，并依据示例文件的目录格式进行存放。
 2. （可选）若需使用 nnU-Net v2进行3D CT 颅骨剥离，可以下载我们已经训练好的nnU-Net v2 分割模型权重，之后的操作请参考其官方文档：[nnU-Net v2 GitHub](https://github.com/MIC-DKFZ/nnUNet)。  
-3. - 运行`train.py`  
-  - 模型训练入口，运行以下命令即可开始训练：  
+3. 运行以下命令即可开始训练：  
     ```bash
     python train.py
     ```  
