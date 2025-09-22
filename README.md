@@ -33,11 +33,13 @@ Note: The BioClinicalBERT pretrained model used in our code is from HuggingFace:
    - Follow the official nnU-Net v2 documentation for inference/training: [nnU-Net v2 GitHub](https://github.com/MIC-DKFZ/nnUNet)  
 
 3. **Multi-modal Prognostic Prediction Model**  
-   - (Optional) Download the pretrained multi-modal model weights: [multi-modal weights](https://drive.google.com/drive/folders/15RC24J6VoNf8OmvVwXzMR7nL2SyerJpe?usp=drive_link)  
+   - Download the pretrained multi-modal model weights: [multi-modal weights](https://drive.google.com/drive/folders/15RC24J6VoNf8OmvVwXzMR7nL2SyerJpe?usp=drive_link)  
    - Start training or inference with:  
      ```bash
      python train.py
      ```  
+
+> ⚠️ **Important:** Although pretrained weights are provided, it is **highly recommended to retrain the models using your own dataset** for optimal performance and generalization.
 
 ---
 
