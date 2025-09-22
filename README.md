@@ -22,7 +22,7 @@ Note: The BioClinicalBERT pretrained model used in our code is from HuggingFace:
 ### 🚀 Usage
 
 1. Replace the dataset with your own data, and organize it following the directory format in the example files.  
-2. *(Optional)* If you need to perform 3D CT skull stripping using nnU-Net v2, you can download our pretrained nnU-Net v2 segmentation weights. For further steps, please refer to the official documentation: [nnU-Net v2 GitHub](https://github.com/MIC-DKFZ/nnUNet).  
+2. *(Optional)* If you need to perform 3D CT skull stripping using nnU-Net v2, you can **download**(https://drive.google.com/drive/folders/1pW6QGRM6AF2CuE5ohcE-WfbhgxOBGISZ?usp=drive_link) our pretrained nnU-Net v2 segmentation weights. For further steps, please refer to the official documentation: [nnU-Net v2 GitHub](https://github.com/MIC-DKFZ/nnUNet).  
 3. Start training with the following command:  
     ```bash
     python train.py
@@ -35,7 +35,7 @@ Note: The BioClinicalBERT pretrained model used in our code is from HuggingFace:
 - Due to the heterogeneity of data from different medical centers, we recommend retraining the model on your own dataset.  
 - `.pth` files only contain the **model weights**. Please ensure that the model definition matches the training phase when loading them.  
 - nnU-Net v2 models must follow the official framework’s path conventions.  
-- BioClinicalBERT should be downloaded separately from HuggingFace and loaded during runtime.  
+- It is recommended to download BioClinicalBERT separately from HuggingFace and load it during runtime.  
 
 ---
 
