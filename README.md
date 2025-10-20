@@ -10,7 +10,7 @@ This repository provides the **model code and pretrained weights** used in our s
 
 ### 🔗 Download Weights
 
-All weights are hosted on Google Drive (primary). If the links fail, you can use the **backup link on Zenodo**.
+All weights are hosted on Google Drive (primary). If the links fail, you can use the **alternative link on Zenodo**.
 
 - **nnU-Net v2 segmentation model weights:**  
 👉 [Download nnU-Net v2 weights](https://drive.google.com/drive/folders/1QxuVMiCTDg65k_e30gdFU2hLs5t1VlBP?usp=drive_link)  
